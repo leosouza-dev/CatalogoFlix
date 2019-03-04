@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalogoflix", "Catalogoflix\Catalogoflix.csproj", "{5631BD05-79EE-4307-BC74-AA3CE8B087AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5631BD05-79EE-4307-BC74-AA3CE8B087AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5631BD05-79EE-4307-BC74-AA3CE8B087AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5631BD05-79EE-4307-BC74-AA3CE8B087AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5631BD05-79EE-4307-BC74-AA3CE8B087AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A48F1E3F-A51F-42FF-A294-CD8B6ACC8A9A}
+	EndGlobalSection
+EndGlobal
