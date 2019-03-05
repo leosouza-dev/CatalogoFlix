@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Catalogoflix.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -12,5 +13,8 @@ namespace Catalogoflix.Data
             : base(options)
         {
         }
+
+        public DbSet<Filme> Filme { get; set; }
+        public DbSet<InteresseFilme> InteresseFilme { get; set; }
     }
 }

@@ -1,0 +1,46 @@
+﻿@model Catalogoflix.Models.Filme
+@{
+    ViewData["Title"] = "Detalhes";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Titulo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Titulo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Estilo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Estilo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Resumo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Resumo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DataLancamento)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DataLancamento)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DescricaoCompleta)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DescricaoCompleta)
+        </dd>
+    </dl>
+
+    <form>
+        <a asp-action="Index" class="btn btn-danger">Voltar para Lista</a>
+    </form>
+</div>

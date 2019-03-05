@@ -12,6 +12,7 @@ using Microsoft.EntityFrameworkCore;
 using Catalogoflix.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Catalogoflix.Services;
 
 namespace Catalogoflix
 {
@@ -41,6 +42,9 @@ namespace Catalogoflix
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            // *************** injeção de dependencias ***************
+            services.AddScoped<FilmeService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -67,7 +71,7 @@ namespace Catalogoflix
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Filmes}/{action=Index}/{id?}");
             });
         }
     }
