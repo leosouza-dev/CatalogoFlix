@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Catalogoflix.Services;
 using Catalogoflix.Models;
 using Catalogoflix.Data;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Catalogoflix.Controllers
 {
@@ -29,6 +30,7 @@ namespace Catalogoflix.Controllers
             return View(lista);
         }
 
+        [Authorize]
         public IActionResult Create()
         {
             return View();
@@ -66,6 +68,7 @@ namespace Catalogoflix.Controllers
             return View(emails);
         }
 
+        [Authorize]
         public IActionResult Delete(int? id)
         {
             var obj = _filmeService.EncontrarPorId(id.Value);
@@ -81,6 +84,7 @@ namespace Catalogoflix.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        [Authorize]
         public IActionResult Edit(int? id)
         {
             var obj = _filmeService.EncontrarPorId(id.Value);
