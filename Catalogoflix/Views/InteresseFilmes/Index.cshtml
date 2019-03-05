@@ -1,0 +1,34 @@
+﻿@model Catalogoflix.Models.InteresseFilme
+@{
+    ViewData["Title"] = "Sugestão de Filme";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<p>Enviaremos um e-mail assim que sua sugestão estiver em nosso catálogo!</p>
+
+<div class="row">
+    <div class="col-md-4">
+        <!-- 1/3 da tela-->
+        <form asp-action="Create">
+
+            <div class="form-group">
+                <label asp-for="Titulo" class="control-label"></label>
+                <input asp-for="Titulo" class="form-control" />
+                <span asp-validation-for="Titulo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Cadastrar" class="btn btn-default btn-danger" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

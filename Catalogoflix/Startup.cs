@@ -45,6 +45,7 @@ namespace Catalogoflix
 
             // *************** injeção de dependencias ***************
             services.AddScoped<FilmeService>();
+            services.AddScoped<InteresseFilmeService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
